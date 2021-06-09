@@ -1,0 +1,22 @@
+.post-box-container {
+  
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: auto;
+    row-gap: 2%;
+    column-gap: 2%;
+    align-content: center;
+    margin-left: 6%;
+  }
+  
+.post-box-container > a.button{
+    padding: 2% 2%;
+    box-shadow: 0 20px 30px rgba(0,0,0,0.1);
+    text-decoration: none;
+    color: initial;
+    text-align: center;
+}
+
+.post-list {
+    text-align: center;
+  }

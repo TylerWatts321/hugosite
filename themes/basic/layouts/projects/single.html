@@ -1,0 +1,18 @@
+{{ define "main" }}
+<div class= "single-project-container">
+    <section class= "project-image">
+        <img src= "{{.Params.mainimage}}">
+    </section>
+    
+    <section class= "project">
+        <h3>What is {{.Title}}?</h3>
+        {{.Params.description}}
+        <p> The project can also be downloaded
+            <a href="{{.Params.linktodownload}}">here</a> 
+        </p>
+        <h3>Summary of Responsibilities</h3>
+        {{.Content}}
+    </section>
+
+</div>
+{{ end }}

@@ -1,0 +1,23 @@
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "Gordon \"Tyler\" Watts - Game Developer Portfolio"
+theme = "basic"
+pygmentsUseClasses = true
+disqusShortname = "gordons-portfolio"
+
+[permalinks]
+posts = "posts/:year/:month/:slug/"
+year = "/posts/:slug/"
+month = "/posts/:slug/"
+
+[params]
+author = "Gordon Watts"
+description = "My portfolio site."
+googleAnalytics = "UA-xxxxxxxxxxxx"
+
+gh_url = "https://api.github.com/users"
+gh_user = "TylerWatts321"
+
+[taxonomies]
+year = "year"
+month = "month"

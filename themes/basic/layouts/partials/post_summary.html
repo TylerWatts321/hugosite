@@ -1,0 +1,10 @@
+<a href = {{.RelPermalink}} class = button>
+  <h3>
+    {{ .Title }}
+  </h3>
+  <time>
+    {{ .Date | dateFormat "January" }}
+    {{ .Date | dateFormat "2" }}
+  </time>
+  {{ .Summary }}
+</a>

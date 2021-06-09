@@ -1,0 +1,39 @@
+{{ define "main" }}
+    <section class= "project-list">
+        <h1 style= "text-align: center; font-size: 175%; font-family: 'Poppins', sans-serif;">Projects</h1>
+        {{ range (where .Site.RegularPages "Type" "in" "projects").ByDate.Reverse }}
+            <div class= "project-container">
+            <section class= "project-images">
+                <div class="box">
+                    <img src="{{.Params.image1 | relURL}}">
+                </div>
+                <div class="box">
+                    <img src="{{.Params.image2 | relURL}}">
+                </div>
+                <div class="box">
+                    <img src="{{.Params.image3 | relURL}}">
+                </div>
+                <div class="box">
+                    <img src="{{.Params.image4 | relURL}}">
+                </div>
+            </section>
+            
+            <section class= "project">
+                <h2 style= "text-align: center;">{{ .Title }}</h2>
+                <ul><i>What I did: </i>{{.Params.Responsibilities}}</ul>
+                <!--Release:-->
+                <ul><i>Release: </i>{{.Params.date_released}}</ul>
+                <!--Project Length-->
+                <ul><i>Project Length: </i>{{.Params.proj_length}}</ul>
+                <ul><i>Team Size: </i>{{.Params.team_size}}</ul>
+                <ul><i>Engine and tools: </i>{{.Params.tech}}</ul>
+                <ul>
+                    Link: 
+                    <a href="{{ .RelPermalink }}">Portfolio Page</a>
+                </ul>
+            </section>
+            </div>
+        <hr>
+        {{end}}
+    </section>
+    {{end}}

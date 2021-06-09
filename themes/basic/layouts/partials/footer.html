@@ -1,0 +1,15 @@
+<footer>
+
+  <small>Copyright {{now.Format "2006"}} {{.Site.Params.Author}}.</small>
+
+  {{ $url := printf "%s/%s" "https://github.com/" .Site.Params.gh_user }}
+  <div class="icon-bar">
+      <a href="{{$url}}"><img src={{"GitHub-Mark-Light-32px.png" | relURL}} width="32" height="32"></a>
+      <a href="https://www.linkedin.com/in/tyler-watts-927170164/"><img src={{"linkedin.png" | relURL }} width="32" height=auto></a>
+  </div>
+  <p>Powered by<br>
+    <a href="https://gohugo.io">
+      <img src="{{ "hugo-logo-wide.svg" | relURL }}" width="128" height="38">
+    </a>
+  </p>
+</footer>

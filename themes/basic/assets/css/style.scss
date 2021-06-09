@@ -1,0 +1,57 @@
+.container {
+  margin: 0 auto;
+  width: 80%;
+}
+
+header{
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+}
+
+body{
+  font-family: 'Roboto', sans-serif;
+}
+
+
+@import 'footer';
+@import 'header';
+@import 'pagination';
+@import 'posts';
+@import 'projects';
+
+
+.selfie > img{
+  outline-style: solid;
+  outline-color: #D72638;
+  width: 300px;
+  height: auto;
+  border-radius: 50%;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+hr {
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 1px;
+  color:#1d3557;
+}
+
+h3{
+  text-align: center;
+}
+
+
+
+  
+
+
+
+
+
+

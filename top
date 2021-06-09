@@ -1,0 +1,192 @@
+[33mcommit 371d64b7ccaa5a8938a47bb361ba8b3159f612fa[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m
+Author: TylerWatts321 <63529654+TylerWatts321@users.noreply.github.com>
+Date:   Wed Jun 9 18:24:22 2021 -0400
+
+    initial import
+
+[1mdiff --git a/.gitignore b/.gitignore[m
+[1mnew file mode 100644[m
+[1mindex 0000000..c01c758[m
+[1m--- /dev/null[m
+[1m+++ b/.gitignore[m
+[36m@@ -0,0 +1,5 @@[m
+[32m+[m[32m# exclude JS dependencies[m
+[32m+[m[32mnode_modules[m
+[32m+[m
+[32m+[m[32m# exclude Hugo's output[m
+[32m+[m[32mpublic[m
+\ No newline at end of file[m
+[1mdiff --git a/archetypes/default.md b/archetypes/default.md[m
+[1mnew file mode 100644[m
+[1mindex 0000000..5ae3c01[m
+[1m--- /dev/null[m
+[1m+++ b/archetypes/default.md[m
+[36m@@ -0,0 +1,6 @@[m
+[32m+[m[32m---[m
+[32m+[m[32mtitle: "{{ replace .Name "-" " " | title }}"[m
+[32m+[m[32mdate: {{ .Date }}[m
+[32m+[m[32mdraft: false[m
+[32m+[m[32m---[m
+[32m+[m
+[1mdiff --git a/config.toml b/config.toml[m
+[1mnew file mode 100644[m
+[1mindex 0000000..4b88e59[m
+[1m--- /dev/null[m
+[1m+++ b/config.toml[m
+[36m@@ -0,0 +1,23 @@[m
+[32m+[m[32mbaseURL = "http://example.org/"[m
+[32m+[m[32mlanguageCode = "en-us"[m
+[32m+[m[32mtitle = "Gordon \"Tyler\" Watts - Game Developer Portfolio"[m
+[32m+[m[32mtheme = "basic"[m
+[32m+[m[32mpygmentsUseClasses = true[m
+[32m+[m[32mdisqusShortname = "gordons-portfolio"[m
+[32m+[m
+[32m+[m[32m[permalinks][m
+[32m+[m[32mposts = "posts/:year/:month/:slug/"[m
+[32m+[m[32myear = "/posts/:slug/"[m
+[32m+[m[32mmonth = "/posts/:slug/"[m
+[32m+[m
+[32m+[m[32m[params][m
+[32m+[m[32mauthor = "Gordon Watts"[m
+[32m+[m[32mdescription = "My portfolio site."[m
+[32m+[m[32mgoogleAnalytics = "UA-xxxxxxxxxxxx"[m
+[32m+[m
+[32m+[m[32mgh_url = "https://api.github.com/users"[m
+[32m+[m[32mgh_user = "TylerWatts321"[m
+[32m+[m
+[32m+[m[32m[taxonomies][m
+[32m+[m[32myear = "year"[m
+[32m+[m[32mmonth = "month"[m
+[1mdiff --git a/content/_index.md b/content/_index.md[m
+[1mnew file mode 100644[m
+[1mindex 0000000..e69de29[m
+[1mdiff --git a/content/about.md b/content/about.md[m
+[1mnew file mode 100644[m
+[1mindex 0000000..356f506[m
+[1m--- /dev/null[m
+[1m+++ b/content/about.md[m
+[36m@@ -0,0 +1,8 @@[m
+[32m+[m[32m---[m
+[32m+[m[32mtitle: "About"[m
+[32m+[m[32mdate: 2021-05-10T20:17:34-04:00[m
+[32m+[m[32mdraft: false[m
+[32m+[m[32mlayout: about[m
+[32m+[m[32m---[m
+[32m+[m
+[32m+[m[32mI am a Junior at the University of Central Florida, and am due to graduate by Spring 2023. Computer Science is my current major; after I graduate I plan on enrolling in Florida Interactive Entertainment Academy (FIEA) - UCF's graduate video game development program. When I am not studying for classes, cranking out school projects - or anything else school related - one can assume that I spend my free time playing video games... this is very true. I consider video games to be a cornerstone of my life growing up, and it is for this reason I have invested in learning the ways of game development today. I understand the feelings of escapism and enjoyment that come from playing video games... growing up these feelings have gotten me through harsh times of my own, and I have video games to thank for that. I hope one day I can create video games of my own that can help people get through what they may consider to be difficult times in their life as well.[m
+\ No newline at end of file[m
+[1mdiff --git a/content/posts/my-vacation/images/badlands.jpg b/content/posts/my-vacation/images/badlands.jpg[m
+[1mnew file mode 100644[m
+[1mindex 0000000..e1b083a[m
+Binary files /dev/null and b/content/posts/my-vacation/images/badlands.jpg differ
+[1mdiff --git a/content/posts/my-vacation/images/bison.jpg b/content/posts/my-vacation/images/bison.jpg[m
+[1mnew file mode 100644[m
+[1mindex 0000000..6e3a862[m
+Binary files /dev/null and b/content/posts/my-vacation/images/bison.jpg differ
+[1mdiff --git a/content/posts/my-vacation/images/rushmore.jpg b/content/posts/my-vacation/images/rushmore.jpg[m
+[1mnew file mode 100644[m
+[1mindex 0000000..502a31b[m
+Binary files /dev/null and b/content/posts/my-vacation/images/rushmore.jpg differ
+[1mdiff --git a/content/posts/my-vacation/index.md b/content/posts/my-vacation/index.md[m
+[1mnew file mode 100644[m
+[1mindex 0000000..80a74be[m
+[1m--- /dev/null[m
+[1m+++ b/content/posts/my-vacation/index.md[m
+[36m@@ -0,0 +1,21 @@[m
+[32m+[m[32m---[m
+[32m+[m[32mtitle: "My Vacation"[m
+[32m+[m[32mdate: 2021-06-01T14:27:20-04:00[m
+[32m+[m[32mdraft: false[m
+[32m+[m[32mauthor: Gordon Watts[m
+[32m+[m[32myear: "2021"[m
+[32m+[m[32mmonth: "2021/06"[m
+[32m+[m[32mcategories:[m
+[32m+[m[32m- Personal[m
+[32m+[m[32m- Thoughts[m
+[32m+[m[32mtags:[m
+[32m+[m[32m- Vacations[m
+[32m+[m[32m---[m
+[32m+[m
+[32m+[m[32mHere are pictures from my recent trip to South Dakota.[m
+[32m+[m
+[32m+[m[32m<!--more-->[m
+[32m+[m
+[32m+[m[32m{{< postimage "images/rushmore.jpg" "Mount Rushmore" >}}[m
+[32m+[m[32m{{< postimage "images/badlands.jpg" "The Badlands" >}}[m
+[32m+[m[32m{{< postimage "images/bison.jpg" "Bison at Custer National Park" >}}[m
+\ No newline at end of file[m
+[1mdiff --git a/content/posts/test.md b/content/posts/test.md[m
+[1mnew file mode 100644[m
+[1mindex 0000000..7f1f07b[m
+[1m--- /dev/null[m
+[1m+++ b/content/posts/test.md[m
+[36m@@ -0,0 +1,17 @@[m
+[32m+[m[32m---[m
+[32m+[m[32mtitle: "Test"[m
+[32m+[m[32mdate: 2021-06-07T12:56:16-04:00[m
+[32m+[m[32mdraft: false[m
+[32m+[m[32mauthor: Gordon Watts[m
+[32m+[m[32myear: "2021"[m
+[32m+[m[32mmonth: "2021/06"[m
+[32m+[m[32mcategories:[m
+[32m+[m[32m- Personal[m
+[32m+[m[32m- Thoughts[m
+[32m+[m[32m---[m
+[32m+[m
+[32m+[m[32mLorem ipsum dolor sit amet, consectetur adipisicing elit,[m[41m [m
+[32m+[m[32mseddo eiusmodtempor incididunt ut labore et dolore magna aliqua.[m
+[32m+[m[32m<!--more-->[m
+[32m+[m[32mUt enim ad minim veniam, quis nostrud exercitation ullamcolaboris[m
+[32m+[m[32mnisi utaliquip ex ea commodo consequat.[m
+\ No newline at end of file[m
+[1mdiff --git a/content/posts/test2.md b/content/posts/test2.md[m
+[1mnew file mode 100644[m
+[1mindex 0000000..8b3b7f6[m
+[1m--- /dev/null[m
+[1m+++ b/content/posts/test2.md[m
+[36m@@ -0,0 +1,17 @@[m
+[32m+[m[32m---[m
+[32m+[m[32mtitle: "Test2"[m
+[32m+[m[32mdate: 2021-06-07T12:56:19-04:00[m
+[32m+[m[32mdraft: false[m
+[32m+[m[32mauthor: Gordon Watts[m
+[32m+[m[32myear: "2021"[m
+[32m+[m[32mmonth: "2021/06"[m
+[32m+[m[32mcategories:[m
+[32m+[m[32m- Personal[m
+[32m+[m[32m- Thoughts[m
+[32m+[m[32m---[m
+[32m+[m
+[32m+[m[32mLorem ipsum dolor sit amet, consectetur adipisicing elit,[m[41m [m
+[32m+[m[32mseddo eiusmodtempor incididunt ut labore et dolore magna aliqua.[m
+[32m+[m[32m<!--more-->[m
+[32m+[m[32mUt enim ad minim veniam, quis nostrud exercitation ullamcolaboris[m
+[32m+[m[32mnisi utaliquip ex ea commodo consequat.[m
+\ No newline at end of file[m
+[1mdiff --git a/content/posts/test3.md b/content/posts/test3.md[m
+[1mnew file mode 100644[m
+[1mindex 0000000..be3a049[m
+[1m--- /dev/null[m
+[1m+++ b/content/posts/test3.md[m
+[36m@@ -0,0 +1,17 @@[m
+[32m+[m[32m---[m
+[32m+[m[32mtitle: "Test3"[m
+[32m+[m[32mdate: 2021-06-07T19:48:08-04:00[m
+[32m+[m[32mdraft: false[m
+[32m+[m[32mauthor: Gordon Watts[m
+[32m+[m[32myear: "2021"[m
+[32m+[m[32mmonth: "2021/06"[m
+[32m+[m[32mcategories:[m
+[32m+[m[32m- Personal[m
+[32m+[m[32m- Thoughts[m
+[32m+[m[32m---[m
+[32m+[m
+[32m+[m[32mLorem ipsum dolor sit amet, consectetur adipisicing elit,[m[41m [m
+[32m+[m[32mseddo eiusmodtempor incididunt ut labore et dolore magna aliqua.[m
+[32m+[m[32m<!--more-->[m
+[32m+[m[32mUt enim ad minim veniam, quis nostrud exercitation ullamcolaboris[m
+[32m+[m[32mnisi utaliquip ex ea commodo consequat.[m
+\ No newline at end of file[m
+[1mdiff --git a/content/posts/test4.md b/content/posts/test4.md[m
+[1mnew file mode 100644[m
+[1mindex 0000000

@@ -1,6 +1,6 @@
 baseURL = "http://example.org/"
 languageCode = "en-us"
-title = "Gordon \"Tyler\" Watts - Game Developer Portfolio"
+title = "Gordon \"Tyler\" Watts - Unity Generalist Portfolio"
 theme = "basic"
 pygmentsUseClasses = true
 disqusShortname = "gordons-portfolio"

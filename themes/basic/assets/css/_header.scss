@@ -16,11 +16,7 @@ nav > a:hover {
     background-color: #f1faee;
     color: black;
 }
-  
-nav > a.active {
-    background-color: #D72638;
-    color: white;
-}
+
 
 @media only screen and (min-width: 768px) {
     nav { flex-direction: row; }

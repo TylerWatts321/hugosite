@@ -4,13 +4,8 @@
     "description": "My portfolio",
     "private": true,
     "scripts": {
-        "build": "npm-run-all webpack hugo-build",
-        "hugo-build": "hugo --cleanDestinationDir",
-        "webpack": "webpack",
-        "webpack-watch": "webpack --watch",
-        "hugo-deploy": "hugo deploy",
-        "deploy": "npm-run-all build hugo-deploy",
-        "dev": "npm-run-all webpack --parallel webpack-watch hugo-server"
+        "build": "hugo --cleanDestinationDir",
+        "hugo-server": "hugo server --disableFastRender"
     },
     "devDependencies": {
         "webpack": "^5.38.1",

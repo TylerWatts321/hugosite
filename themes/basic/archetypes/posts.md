@@ -2,15 +2,16 @@
 title: "{{ replace .Name "-" " " | title }}"
 date: {{ .Date }}
 draft: false
-author: Gordon Watts
+author: "Gordon Watts"
 year: "{{ dateFormat "2006" .Date}}"
 month: "{{ dateFormat "2006/01" .Date}}"
 categories:
 - Personal
-- Thoughts
+- My Journey
 tags:
-- Software
-- HTML
+- Game Development
+- Unity
+- Teaching
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, 

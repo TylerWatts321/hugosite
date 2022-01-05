@@ -21,3 +21,5 @@ gh_user = "TylerWatts321"
 [taxonomies]
 year = "year"
 month = "month"
+tag = "tags"
+category = "categories"

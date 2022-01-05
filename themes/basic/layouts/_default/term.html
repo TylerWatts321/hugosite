@@ -1,0 +1,11 @@
+{{ define "main" }}
+<h1 style= "text-align: center; font-size: 175%; font-family: 'Poppins', sans-serif;">{{ .Title }}</h1>
+  <div class= "post-box-container">
+  {{ range (.Paginator 9).Pages }}
+    {{ partial "post_summary.html" . }}
+  {{ end }}
+  </div>
+
+  {{ template "_internal/pagination.html" . }}
+
+{{ end }}

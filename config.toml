@@ -11,6 +11,7 @@ year = "/posts/:slug/"
 month = "/posts/:slug/"
 
 [params]
+DefaultContentLanguage = "en"
 author = "Gordon Watts"
 description = "My portfolio site."
 googleAnalytics = "UA-xxxxxxxxxxxx"
